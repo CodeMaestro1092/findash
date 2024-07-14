@@ -1,13 +1,14 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "@/components/dashboard";
+// import Predictions from '@/components/predictions'
 
 const Router = () => {
   return (
     <Routes>
-      <Route path='/' element={<div> Hello Nigger </div>}/>
-      <Route path='/2' element={<div> Hello Nigger 2 </div>}/>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/predictions" element={""} />
     </Routes>
-  )
-}
+  );
+};
 
-export default Router
+export default Router;
